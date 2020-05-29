@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Assignment</title>
+</head>
+<body>
+  
+</body>
+<script type="text/javascript">
+/* 
+Simple Interest Calculation
+  A = P(1 + rt)
+  Where P = #100,000
+  r = 10% per month * 24 = 240% = 2.4
+  t = 2 years
+*/
+
+    var P = 100000;
+    var r = 2.4;
+    var t = 2;
+    var m = 12;
+  
+    
+    var A = P * (1 + r * t);
+    document.write("Simple Interest = " + "The Total Amount to be paid is" + " " + "#" + A);
+    document.write("<br>");
+    document.write("<br>");
+/*
+Compound Interest Calculation
+  A = P(1 + rm)mt
+  where p = 100000
+  r = 10% = 0.1 monthly
+  m = 12
+  t = 2years
+*/
+
+  var r = 0.1;
+  var A = P * (1 + r * m) ^ m*t
+  document.write("Compound Interest = " + "The Total Amount to be paid is" + " " + "#" + A);
+
+   document.write("<br>"); 
+   document.write("<br>");
+    document.write("Compound Interest is a a Better Deal");
+
+</script>
+</html>
